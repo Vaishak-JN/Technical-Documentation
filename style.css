@@ -1,0 +1,187 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  color: black;
+}
+#navbar {
+  background-color: #282a35;
+  position: fixed;
+  display: block;
+  width: 100vw;
+  z-index: 1;
+  overflow: hidden;
+}
+#navbar li {
+  display: block;
+  float: left;
+  padding: 1vh 1.6vw 1vh 1.6vw;
+  font-size: 1.3em;
+}
+#navbar li a {
+  color: white;
+  text-decoration: none;
+}
+#navbar li:hover {
+  background-color: #1c1d24;
+}
+#navbar a:active {
+  background-color: #04aa6d;
+}
+/* dropdown menu in left side menu */
+#dropdown {
+  position: relative;
+  display: block;
+}
+#dropcontent {
+  display: none;
+  position: absolute;
+  background-color: #d9dbdb;
+  z-index: 1;
+  width: 100%;
+  /* right: 0; */
+  padding-right: 5%;
+}
+#dropcontent a {
+  text-decoration: none;
+  color: black;
+}
+#dropdown:hover {
+  margin-bottom: 80%;
+}
+#dropdown:hover #dropcontent {
+  display: block;
+}
+#dropdown:hover #droplist {
+  background-color: #04aa6d;
+}
+/* left side menu */
+#leftmenu {
+  display: block;
+  float: left;
+  width: 15%;
+  height: 100%;
+  background-color: #e7e9eb;
+  word-wrap: break-word;
+  position: fixed;
+  z-index: 0;
+  overflow: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#leftmenu p {
+  margin-left: 1vw;
+}
+#leftmenu li {
+  display: block;
+  text-indent: 1vw;
+}
+#leftmenu ul {
+  display: block;
+
+  line-height: 4.5vh;
+  list-style-type: none;
+}
+#leftmenu li:hover {
+  background-color: #cccccc;
+  border: none;
+}
+#content {
+  float: right;
+  width: 73%;
+  display: block;
+  margin-top: 7vh;
+  margin-right: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px groove #f4f4f4;
+}
+.pre {
+  float: left;
+  background-color: #04aa6d;
+  height: 8vh;
+  width: 6vw;
+  color: white;
+  border-radius: 10%;
+  font-size: 1em;
+}
+.nxt {
+  float: right;
+  margin-right: 3vw;
+  background-color: #04aa6d;
+  height: 8vh;
+  width: 6vw;
+  color: white;
+  border-radius: 10%;
+}
+hr {
+  border: 1px groove #f4f4f4;
+}
+.pre:hover {
+  background-color: #038656;
+}
+.nxt:hover {
+  background-color: #038656;
+}
+#bimg {
+  display: block;
+  height: 20em;
+  width: 96%;
+  background: url("./mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3%;
+}
+#bimg li {
+  color: rgb(139, 4, 4);
+  background-color: rgba(245, 245, 245, 0.199);
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-size: 1em;
+  display: inline-block;
+  letter-spacing: 0.1em;
+}
+/* for bullet list */
+#bimg li::before {
+  content: "\2022 ";
+  color: black;
+  font-weight: bolder;
+  margin-right: 0.5em;
+}
+#try {
+  background-color: #04aa6d;
+  height: 6vh;
+  width: 10vw;
+  color: white;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+#try a {
+  text-decoration: none;
+  color: white;
+}
+#try:hover {
+  background-color: #038656;
+}
+/* background color */
+#bclr {
+  background-color: #e7e9eb;
+  padding: 2%;
+  margin-right: 4%;
+  height: 100%;
+  border-radius: 10px;
+}
+/* example */
+#egbclr {
+  background-color: white;
+  padding: 2%;
+  margin: 2%;
+  margin-left: 5%;
+  height: 100%;
+  border-left: 5px solid green;
+}
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
