@@ -9,16 +9,17 @@ a {
 #navbar {
   background-color: #282a35;
   position: fixed;
-  display: block;
+  /* display: block; */
   width: 100vw;
   z-index: 1;
-  overflow: hidden;
 }
 #navbar li {
   display: block;
+  /* display: inline-block; */
   float: left;
   padding: 1vh 1.6vw 1vh 1.6vw;
   font-size: 1.3em;
+  /* margin: 0; */
 }
 #navbar li a {
   color: white;
@@ -30,33 +31,7 @@ a {
 #navbar a:active {
   background-color: #04aa6d;
 }
-/* dropdown menu in left side menu */
-#dropdown {
-  position: relative;
-  display: block;
-}
-#dropcontent {
-  display: none;
-  position: absolute;
-  background-color: #d9dbdb;
-  z-index: 1;
-  width: 100%;
-  /* right: 0; */
-  padding-right: 5%;
-}
-#dropcontent a {
-  text-decoration: none;
-  color: black;
-}
-#dropdown:hover {
-  margin-bottom: 80%;
-}
-#dropdown:hover #dropcontent {
-  display: block;
-}
-#dropdown:hover #droplist {
-  background-color: #04aa6d;
-}
+
 /* left side menu */
 #leftmenu {
   display: block;
@@ -76,10 +51,10 @@ a {
 #leftmenu li {
   display: block;
   text-indent: 1vw;
+  /* padding: 1vh 0 1vh 0; */
 }
 #leftmenu ul {
   display: block;
-
   line-height: 4.5vh;
   list-style-type: none;
 }
@@ -87,6 +62,59 @@ a {
   background-color: #cccccc;
   border: none;
 }
+
+/* dropdown menu in left side menu */
+
+/* #dropdown {
+  position: relative;
+  display: block;
+}
+#dropcontent {
+  display: none;
+  position: absolute;
+  background-color: #d9dbdb;
+  z-index: 1;
+  width: 100%;
+  padding-right: 5%;
+}
+#dropcontent a {
+  text-decoration: none;
+  color: black;
+}
+#dropdown:hover {
+  margin-bottom: 80%;
+}
+#dropdown:hover #dropcontent {
+  display: block;
+}
+#dropdown:hover #droplist {
+  background-color: #04aa6d;
+} */
+
+/* ************************************ */
+#dropdown {
+  display: block;
+}
+#dropcontent {
+  width: 95%;
+  float: right;
+}
+#dropcontent li {
+  display: none;
+  background-color: #d9dbdb;
+  z-index: 1;
+  width: 100%;
+}
+#dropcontent a {
+  text-decoration: none;
+  color: black;
+}
+
+#dropdown:hover #dropcontent li {
+  display: block;
+}
+
+/* ************************************ */
 #content {
   float: right;
   width: 73%;
@@ -184,4 +212,9 @@ button a {
   text-decoration: none;
   color: white;
   font-size: 1em;
+}
+@media (max-width: 400px) {
+  #navbar {
+    white-space: nowrap;
+  }
 }
